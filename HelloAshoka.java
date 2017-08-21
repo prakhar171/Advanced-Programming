@@ -1,7 +1,7 @@
-class hello
+class HelloAshoka
 {
 public void main()
 {
-System.out.println("Hello Ashoka")
+System.out.println("Hello Ashoka");
 }
-]
+}
