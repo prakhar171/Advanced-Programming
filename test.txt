@@ -1,6 +1,0 @@
-<<<<<<< HEAD
-what
-=======
-2
-3
->>>>>>> 15b2f5efc15e72b0e324c2e95bcbfbafe3416b2f
