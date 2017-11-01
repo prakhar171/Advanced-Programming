@@ -22,8 +22,8 @@
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li role="presentation"><a href="#" id="select">Mess Menu</a></li>
-                    <li role="presentation"><a href="#">Food Outlets</a></li>
+                    <li role="presentation"><a href="mess menu.html" id="select">Mess Menu</a></li>
+                    <li role="presentation"><a href="outlets.html">Food Outlets</a></li>
                     <li class="active" role="presentation"><a href="#">Room Booking</a></li>
                 </ul>
             </div>
@@ -38,7 +38,7 @@
                         <label class="control-label" for="name-input-field">Name </label>
                     </div>
                     <div class="col-sm-6 input-column">
-                        <input class="form-control" type="text" name="name" required="">
+                        <input class="form-control" type="text" name="Name" required="">
                     </div>
                 </div>
                 <div class="form-group">
@@ -46,7 +46,7 @@
                         <label class="control-label" for="email-input-field">Email </label>
                     </div>
                     <div class="col-sm-6 input-column">
-                        <input class="form-control" type="email" name="email" required="" autofocus="" inputmode="email">
+                        <input class="form-control" type="email" name="Ashoka_ID" required="" autofocus="" inputmode="email">
                     </div>
                 </div>
                 <div class="form-group">
@@ -54,7 +54,7 @@
                         <label class="control-label" for="purpose-input-field">Purpose </label>
                     </div>
                     <div class="col-sm-6 input-column">
-                        <textarea class="form-control" name="purpose" required=""></textarea>
+                        <textarea class="form-control" name="Purpose" required=""></textarea>
                     </div>
                 </div>
                 <div class="form-group">
@@ -62,7 +62,13 @@
                         <label class="control-label" for="capacity-input-field">Room Capacity:</label>
                     </div>
                     <div class="col-sm-6 input-column">
-                        <input class="form-control" type="search" name="capacity" required="">
+                        <select class="form-control" name="Capacity">
+                            <optgroup label="Choose Capacity">
+                                <option value="25" selected="">25</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                            </optgroup>
+                        </select>
                     </div>
                 </div>
                 <div class="form-group">
@@ -70,7 +76,7 @@
                         <label class="control-label" for="day-input-field">Day </label>
                     </div>
                     <div class="col-md-6 col-md-offset-0 col-sm-6 input-column">
-                        <select class="form-control" name="day" value="Choose Day" required="">
+                        <select class="form-control" name="Day" required="">
                             <optgroup label="Choose Day">
                                 <option value="monday">Monday</option>
                                 <option value="tuesday">Tuesday</option>
@@ -88,7 +94,17 @@
                         <label class="control-label" for="stime-input-field">Start Time </label>
                     </div>
                     <div class="col-sm-6 input-column">
-                        <input class="form-control" type="time" name="stime" required="" step="30">
+                        <select class="form-control" name="Start_Time">
+                            <optgroup label="Choose Start Time">
+                                <option value="0:00" selected="">0:00</option>
+                                <option value="0:30">0:30</option>
+                                <option value="1:00">1:00</option>
+                                <option value="1:30">1:30</option>
+                                <option value="2:00">2:00</option>
+                                <option value="2:30">2:30</option>
+                                <option value="3:00">3:00</option>
+                            </optgroup>
+                        </select>
                     </div>
                 </div>
                 <div class="form-group">
@@ -96,7 +112,17 @@
                         <label class="control-label" for="etime-input-field">End Time </label>
                     </div>
                     <div class="col-sm-6 input-column">
-                        <input class="form-control" type="time" name="etime" required="" step="30">
+                        <select class="form-control" name="End_Time">
+                            <optgroup label="Choose Start Time">
+                                <option value="0:00" selected="">0:00</option>
+                                <option value="0:30">0:30</option>
+                                <option value="1:00">1:00</option>
+                                <option value="1:30">1:30</option>
+                                <option value="2:00">2:00</option>
+                                <option value="2:30">2:30</option>
+                                <option value="3:00">3:00</option>
+                            </optgroup>
+                        </select>
                     </div>
                 </div>
                 <button class="btn btn-primary btn-block" type="submit">Book Room</button>
