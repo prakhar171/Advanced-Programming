@@ -1,0 +1,12 @@
+<html>
+{% if all_days %}
+<h2> Here are all the Room Numbers </h2>
+<ul>
+	{% for day in all_days %}
+	<li><a href = "/RoomBooking/{{ day.id }}/"> {{day.number }} </a></li>
+	{% endfor %}
+</ul>
+{% else %}
+	<h3> You don't have these many rooms </h3>
+{% endif %}
+</html>
