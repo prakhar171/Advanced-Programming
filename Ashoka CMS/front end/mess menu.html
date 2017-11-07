@@ -29,39 +29,55 @@
             </div>
         </div>
     </nav>
-    <div>
-
-            
-            <select class="form-control" name="Day" required="">
-                    <optgroup label="Choose Day">
-                        <option value="Monday">Monday</option>
-                        <option value="Tuesday">Tuesday</option>
-                        <option value="Wednesday">Wednesday</option>
-                        <option value="Thursday">Thursday</option>
-                        <option value="Friday">Friday</option>
-                        <option value="Saturday">Saturday</option>
-                        <option value="Sunday">Sunday</option>
-                    </optgroup>
-                </select>
-                <select class="form-control" name="Meal" required="">
-                        <optgroup label="Meal">
-                            <option value="Breakfast">Breakfast</option>                            
-                            <option value="Lunch">Lunch</option>
-                            <option value="Snacks">Snacks</option>
-                            <option value="Dinner">Dinner</option>
-                        </optgroup>
-                    </select>
-                    <select onChange="window.location.href=this.value">
-                            <option value="www.google.com">A</option>
-                            <option value="www.aol.com">B</option>
+    <div class="row register-form">
+        <div class="col-md-8 col-md-offset-2">
+            <form action = "/mess.py" method = "GET" class="form-horizontal custom-form">
+                
+                <h1 class="text-uppercase" id="room_head">Mess Menu</h1>
+                </br>
+                <div class="form-group">
+                    <div class="col-sm-4 label-column">
+                        <label class="control-label" for="day-input-field">Day</label>
+                    </div>
+                    <div class="col-md-6 col-md-offset-0 col-sm-6 input-column">
+                        <select class="form-control" name="Day" required="">
+                            <optgroup label="Choose Day">
+                                <option value="Monday">Monday</option>
+                                <option value="Tuesday">Tuesday</option>
+                                <option value="Wednesday">Wednesday</option>
+                                <option value="Thursday">Thursday</option>
+                                <option value="Friday">Friday</option>
+                                <option value="Saturday">Saturday</option>
+                                <option value="Sunday">Sunday</option>
+                            </optgroup>
                         </select>
-                        
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-4 label-column">
+                        <label class="control-label" for="meal-input-field">Meal</label>
+                    </div>
+                    <div class="col-md-6 col-md-offset-0 col-sm-6 input-column">
+                        <select class="form-control" name="Meal" required="">
+                            <optgroup label="Choose Day">
+                                <option value="Breakfast">Breakfast</option>
+                                <option value="Lunch">Lunch</option>
+                                <option value="Snacks">Snacks</option>
+                                <option value="Dinner">Dinner</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+                <a href = "/Applications/XAMPP/xamppfiles/htdocs/mess.py"> <button class="btn btn-primary btn-block" type="submit">Book Room</button></a>
+
+            </form>
+        </div>
+    </div>
 
 
-       
-                        <iframe width="200" height="270" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=640F5B6FB6A804C%21796&authkey=%21AIJa3tOtEXc4bCw&em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
-                        
-</div>
+
+
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/myjs.js"></script>
