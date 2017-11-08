@@ -30,40 +30,47 @@
             </div>
         </div>
     </nav>
-    <div class="col-md-12 col-xs-10">
-        <div>
-            <ul class="nav nav-tabs nav-justified">
-                <li class="active"><a href="#tab-1" role="tab" data-toggle="tab">The Hunger Cycle </a></li>
-                <li><a href="#tab-2" role="tab" data-toggle="tab">Dhaba </a></li>
-                <li><a href="#tab-3" role="tab" data-toggle="tab">Food Junction</a></li>
-                <li><a href="#tab-4" role="tab" data-toggle="tab">Fuel Zone</a></li>
-                <li><a href="#tab-5" role="tab" data-toggle="tab">Nescafe-Mess </a></li>
-                <li><a href="#tab-6" role="tab" data-toggle="tab">Chicago Pizza</a></li>
-                <li><a href="#tab-7" role="tab" data-toggle="tab">Juice Bar</a></li>
-            </ul>
-            <div class="tab-content">
-                <div class="tab-pane active" role="tabpanel" id="tab-1">
-                    <p>First tab content.</p>
+    <div class="row register-form">
+        <div class="col-md-8 col-md-offset-2">
+            <form action = "/outlet.py" method = "GET" class="form-horizontal custom-form">
+                
+                <h1 class="text-uppercase" id="room_head">Food Outlets</h1>
+                </br>
+                <div class="form-group">
+                    <div class="col-sm-4 label-column">
+                        <label class="control-label" for="day-input-field">Food Outlets</label>
+                    </div>
+                    <div class="col-md-6 col-md-offset-0 col-sm-6 input-column">
+                        <select class="form-control" name="Outlet" required="">
+                            <optgroup label="Choose Food Outlet">
+                                <option value="thc">The Hunger Cycle</option>
+                                <option value="cc">Chit Chaat</option>
+                                <option value="chicagop">Chicago Pizza</option>
+                                <option value="jbar">Juice Bar</option>
+                                <option value="foodj">Food Junction</option>
+                            </optgroup>
+                        </select>
+                    </div>
                 </div>
-                <div class="tab-pane" role="tabpanel" id="tab-2">
-                    <p>Second tab content.</p>
+                <div class="form-group">
+                    <div class="col-sm-4 label-column">
+                        <label class="control-label" for="meal-input-field">Budget</label>
+                    </div>
+                    <div class="col-md-6 col-md-offset-0 col-sm-6 input-column">
+                        <select class="form-control" name="Meal" required="">
+                            <optgroup label="Choose Meal">
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                                <option value="150">150</option>
+                                <option value="200">200</option>
+                                <option value="250">250</option>
+                            </optgroup>
+                        </select>
+                    </div>
                 </div>
-                <div class="tab-pane" role="tabpanel" id="tab-3">
-                    <p>Third tab content.</p>
-                </div>
-                <div class="tab-pane" role="tabpanel" id="tab-4">
-                    <p>Tab content.</p>
-                </div>
-                <div class="tab-pane" role="tabpanel" id="tab-5">
-                    <p>Tab content.</p>
-                </div>
-                <div class="tab-pane" role="tabpanel" id="tab-6">
-                    <p>Tab content.</p>
-                </div>
-                <div class="tab-pane" role="tabpanel" id="tab-7">
-                    <p>Tab content.</p>
-                </div>
-            </div>
+                <a href = "/Applications/XAMPP/xamppfiles/htdocs/outlet.py"> <button class="btn btn-primary btn-block" type="submit">I'm Feeling Hungry</button></a>
+
+            </form>
         </div>
     </div>
     <script src="assets/js/jquery.min.js"></script>

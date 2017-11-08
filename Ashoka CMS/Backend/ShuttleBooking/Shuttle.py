@@ -1,5 +1,6 @@
 #!/usr/bin/python
 print "Content-type:text/html\r\n\r\n"
+import smtplib
 import datetime
 import mysql.connector
 from mysql.connector import errorcode
@@ -10,13 +11,12 @@ import cgi, cgitb
 # Create instance of FieldStorage 
 # print "<a href=/programs/SignUp.html>Re-Register</a>"
 form = cgi.FieldStorage() 
-cnn=mysql.connector.connect(user = "root", password = "", host = "localhost", database = "Rooms")
+cnn=mysql.connector.connect(user = "root", password = "", host = "localhost", database = "Shuttle")
 cursor=cnn.cursor()
 name = form.getvalue('Name')
 ashoka_id = form.getvalue('Ashoka_ID')
 shuttle_time = form.getvalue('Shuttle_Time')
 origin = form.getvalue('Origin')
-print name, ashoka_id, shuttle_time, origin
 id=form.getvalue('id')
 print "<html>"
 print "<head>"
@@ -33,61 +33,151 @@ if weekno<4 and origin=="Ashoka":
 	check_availability = cursor.fetchall()
 	cnn.commit()
 	s_time=str(shuttle_time)
-	if len(check_availability)!=20:	
-		print len(check_availability)	
+	available_seats=[]
+	for i in check_availability:
+		for j in i:
+			if j!="":
+				available_seats.append(j)
+
+	if len(available_seats)<21:		
 		book_seat="""INSERT INTO Weekday_Ashoka (`%s`) VALUES ('%s')""" % (shuttle_time,name)
 		cursor.execute(book_seat)
 		cnn.commit()
-elif weekno<4 and Origin == "Jahangirpuri": 
+		
+		server = smtplib.SMTP('smtp.gmail.com', 587)
+		server.starttls()
+		server.login("cmsashoka", "APProject@2017")
+		msg = name + "Your Shuttle has been Booked, Congratulations"
+		
+		server.sendmail("cmsashoka@gmail.com", ashoka_id, msg)
+		server.quit()
+	else:
+		print "errorcode"
+
+elif weekno<4 and origin == "Jahangirpuri": 
 	check_availability = "SELECT  `%s` from Weekday_Jahangirpuri" % (shuttle_time,)
 	cursor.execute(check_availability)
 	check_availability = cursor.fetchall()
 	cnn.commit()
+
 	s_time=str(shuttle_time)
-	if len(check_availability)!=20:
+	available_seats=[]
+	for i in check_availability:
+		for j in i:
+			if j!="":
+				available_seats.append(j)
+	if len(available_seats)<21:
+		
 		book_seat="""INSERT INTO Weekday_Jahangirpuri (`%s`) VALUES ('%s')""" % (shuttle_time,name)
 		cursor.execute(book_seat)
 		cnn.commit()
-elif weekno==5 and Origin == "Ashoka":
+		server = smtplib.SMTP('smtp.gmail.com', 587)
+		server.starttls()
+		server.login("cmsashoka", "APProject@2017")
+ 		shuttle_time= str(shuttle_time)
+		msg = name + "Your Shuttle has been Booked, Congratulations"
+		server.sendmail("cmsashoka@gmail.com", ashoka_id, msg)
+		server.quit()
+	else:
+
+		print "The Shuttle is Full"
+elif weekno==5 and origin == "Ashoka":
 	check_availability = "SELECT  `%s` from Friday_Ashoka" % (shuttle_time,)
 	cursor.execute(check_availability)
 	check_availability = cursor.fetchall()
 	cnn.commit()
 	s_time=str(shuttle_time)
-	if len(check_availability)!=20:
+	available_seats=[]
+	for i in check_availability:
+		for j in i:
+			if j!="":
+				available_seats.append(j)
+	if len(available_seats)<21:
 		book_seat="""INSERT INTO Friday_Ashoka (`%s`) VALUES ('%s')""" % (shuttle_time,name)
 		cursor.execute(book_seat)
 		cnn.commit()
-elif weekno==5 and Origin == "Jahangirpuri":
+		server = smtplib.SMTP('smtp.gmail.com', 587)
+		server.starttls()
+		server.login("cmsashoka", "APProject@2017")
+ 		shuttle_time= str(shuttle_time)
+		msg = name + "Your Shuttle has been Booked, Congratulations"
+		server.sendmail("cmsashoka@gmail.com", ashoka_id, msg)
+		server.quit()
+	else:
+		print "The Shuttle is Full"		
+elif weekno==5 and origin == "Jahangirpuri":
 	check_availability = "SELECT  `%s` from Friday_Jahangirpuri" % (shuttle_time,)
 	cursor.execute(check_availability)
 	check_availability = cursor.fetchall()
 	cnn.commit()
 	s_time=str(shuttle_time)
-	if len(check_availability)!=20:
+	available_seats=[]
+	for i in check_availability:
+		for j in i:
+			if j!="":
+				available_seats.append(j)
+	if len(available_seats)<21:
 		book_seat="""INSERT INTO Friday_Jahangirpuri (`%s`) VALUES ('%s')""" % (shuttle_time,name)
 		cursor.execute(book_seat)
 		cnn.commit()
-elif weekno>5 and Origin=="Ashoka":
+		server = smtplib.SMTP('smtp.gmail.com', 587)
+		server.starttls()
+		server.login("cmsashoka", "APProject@2017")
+ 		shuttle_time= str(shuttle_time)
+		msg = name + "Your Shuttle has been Booked, Congratulations"
+		server.sendmail("cmsashoka@gmail.com", ashoka_id, msg)
+		server.quit()
+	else:
+		print "The Shuttle is Full"
+elif weekno>5 and origin=="Ashoka":
 	check_availability = "SELECT  `%s` from Weekend_Ashoka" % (shuttle_time,)
 	cursor.execute(check_availability)
 	check_availability = cursor.fetchall()
 	cnn.commit()
 	s_time=str(shuttle_time)
-	if len(check_availability)!=20:
+	available_seats=[]
+	for i in check_availability:
+		for j in i:
+			if j!="":
+				available_seats.append(j)
+	if len(available_seats)<21:
 		book_seat="""INSERT INTO Weekend_Ashoka (`%s`) VALUES ('%s')""" % (shuttle_time,name)
 		cursor.execute(book_seat)
 		cnn.commit()
+		server = smtplib.SMTP('smtp.gmail.com', 587)
+		server.starttls()
+		server.login("cmsashoka", "APProject@2017")
+ 		shuttle_time= str(shuttle_time)
+		msg = name + "Your Shuttle has been Booked, Congratulations"
+		server.sendmail("cmsashoka@gmail.com", ashoka_id, msg)
+		server.quit()
+	else:
+		print "The Shuttle is Full"
 else:
 	check_availability = "SELECT  `%s` from Weekend_Jahangirpuri" % (shuttle_time,)
 	cursor.execute(check_availability)
 	check_availability = cursor.fetchall()
 	cnn.commit()
 	s_time=str(shuttle_time)
-	if len(check_availability)!=20:
+	available_seats=[]
+	for i in check_availability:
+		for j in i:
+			if j!="":
+				available_seats.append(j)
+	if len(available_seats)<21:
 		book_seat="""INSERT INTO Friday_Ashoka (`%s`) VALUES ('%s')""" % (shuttle_time,name)
 		cursor.execute(book_seat)
 		cnn.commit()
+		server = smtplib.SMTP('smtp.gmail.com', 587)
+		server.starttls()
+		server.login("cmsashoka", "APProject@2017")
+ 		shuttle_time= str(shuttle_time)
+		msg = name + "Your Shuttle has been Booked, Congratulations"
+		server.sendmail("cmsashoka@gmail.com", ashoka_id, msg)
+		server.quit()
+	else:
+		print "The Shuttle is Full"
+
 cnn.close()
 print "</body>"
 print "</html>"
