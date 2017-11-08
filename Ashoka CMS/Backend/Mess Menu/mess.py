@@ -23,7 +23,7 @@ if day=="Monday" and meal=="Breakfast":
     print "<iframe width='204' height='252' frameborder='0' scrolling='no' src='https://onedrive.live.com/embed?resid=640F5B6FB6A804C%21807&authkey=%21ABxP6VSeANl0lAc&em=2&wdAllowInteractivity=False&Item='30%20OCT%20to%2005%20Nov%2017'!B4%3AB12&wdHideGridlines=True&wdInConfigurator=True'></iframe>"                       
 
 elif (day=="Monday" and meal=="Lunch"):
-     print "<iframe width='204' height='252' frameborder='0' scrolling='no' src='goo.gl/'></iframe>"                       
+     print "<iframe width='204' height='252' frameborder='0' scrolling='no' src='https://goo.gl/nkZQ1g'></iframe>"                       
 
     
 elif (day=="Monday" and meal=="Snacks"):
