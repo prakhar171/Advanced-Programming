@@ -20,88 +20,64 @@ print "</head>"
 
 
 if day=="Monday" and meal=="Breakfast":
-    print "<iframe width='204' height='252' frameborder='0' scrolling='no' src='https://onedrive.live.com/embed?resid=640F5B6FB6A804C%21807&authkey=%21ABxP6VSeANl0lAc&em=2&wdAllowInteractivity=False&Item='30%20OCT%20to%2005%20Nov%2017'!B4%3AB12&wdHideGridlines=True&wdInConfigurator=True'></iframe>"                       
+    print "<iframe width='204' height='230' frameborder='0' scrolling='no' src='https://goo.gl/K5kWFz'></iframe>"
 
 elif (day=="Monday" and meal=="Lunch"):
      print "<iframe width='204' height='252' frameborder='0' scrolling='no' src='https://goo.gl/nkZQ1g'></iframe>"                       
 
     
 elif (day=="Monday" and meal=="Snacks"):
-    print "<iframe width='204' height='252' frameborder='0' scrolling='no' src='https://onedrive.live.com/embed?resid=640F5B6FB6A804C%21807&authkey=%21ABxP6VSeANl0lAc&em=2&wdAllowInteractivity=False&Item='30%20OCT%20to%2005%20Nov%2017'!B4%3AB12&wdHideGridlines=True&wdInConfigurator=True'></iframe>"                       
-
+        print "<iframe width='204' height='105' frameborder='0' scrolling='no' src='https://goo.gl/2b6c8R'></iframe>"
 elif (day=="Monday" and meal=="Dinner"):
-    print "<iframe width='204' height='252' frameborder='0' scrolling='no' src='https://onedrive.live.com/embed?resid=640F5B6FB6A804C%21807&authkey=%21ABxP6VSeANl0lAc&em=2&wdAllowInteractivity=False&Item='30%20OCT%20to%2005%20Nov%2017'!B4%3AB12&wdHideGridlines=True&wdInConfigurator=True'></iframe>"                       
-
+        print "<iframe width='204' height='251' frameborder='0' scrolling='no' src='https://goo.gl/78ceXj'></iframe>"
 elif (day=="Tuesday" and meal=="Breakfast"):
-    print "<iframe width='200' height='230' frameborder='0' scrolling='no' src='https://onedrive.live.com/embed?resid=640F5B6FB6A804C%21807&authkey=%21ABxP6VSeANl0lAc&em=2&AllowTyping=True&ActiveCell='30%20OCT%20to%2005%20Nov%2017'!C5&Item='30%20OCT%20to%2005%20Nov%2017'!C5%3AC12&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True'></iframe>"
+        print "<iframe width='200' height='230' frameborder='0' scrolling='no' src='https://goo.gl/kJzu9Z'></iframe>"
 elif (day=="Tuesday" and meal=="Lunch"):
-    print "<iframe width='204' height='252' frameborder='0' scrolling='no' src='https://onedrive.live.com/embed?resid=640F5B6FB6A804C%21807&authkey=%21ABxP6VSeANl0lAc&em=2&wdAllowInteractivity=False&Item='30%20OCT%20to%2005%20Nov%2017'!B4%3AB12&wdHideGridlines=True&wdInConfigurator=True'></iframe>"                       
-
+       print "<iframe width='200' height='303' frameborder='0' scrolling='no' src='https://goo.gl/TkUtGf'></iframe>"
 elif (day=="Tuesday" and meal=="Snacks"):
-    print "<iframe width='204' height='252' frameborder='0' scrolling='no' src='https://onedrive.live.com/embed?resid=640F5B6FB6A804C%21807&authkey=%21ABxP6VSeANl0lAc&em=2&wdAllowInteractivity=False&Item='30%20OCT%20to%2005%20Nov%2017'!B4%3AB12&wdHideGridlines=True&wdInConfigurator=True'></iframe>"                       
-
+       print "<iframe width='200' height='105' frameborder='0' scrolling='no' src='https://goo.gl/7G6epi'></iframe>"
 elif (day=="Tuesday" and meal=="Dinner"):
-    print "<iframe width='204' height='252' frameborder='0' scrolling='no' src='https://onedrive.live.com/embed?resid=640F5B6FB6A804C%21807&authkey=%21ABxP6VSeANl0lAc&em=2&wdAllowInteractivity=False&Item='30%20OCT%20to%2005%20Nov%2017'!B4%3AB12&wdHideGridlines=True&wdInConfigurator=True'></iframe>"                       
-
+       print "<iframe width='200' height='251' frameborder='0' scrolling='no' src='https://goo.gl/6ZDJcB'></iframe>"
 elif (day=="Wednesday" and meal=="Breakfast"):
-    print "<iframe width='204' height='252' frameborder='0' scrolling='no' src='https://onedrive.live.com/embed?resid=640F5B6FB6A804C%21807&authkey=%21ABxP6VSeANl0lAc&em=2&wdAllowInteractivity=False&Item='30%20OCT%20to%2005%20Nov%2017'!B4%3AB12&wdHideGridlines=True&wdInConfigurator=True'></iframe>"                       
-
+       print "<iframe width='200' height='230' frameborder='0' scrolling='no' src='https://goo.gl/pLWBap'></iframe>"
 elif (day=="Wednesday" and meal=="Lunch"):
-    print "<iframe width='204' height='252' frameborder='0' scrolling='no' src='https://onedrive.live.com/embed?resid=640F5B6FB6A804C%21807&authkey=%21ABxP6VSeANl0lAc&em=2&wdAllowInteractivity=False&Item='30%20OCT%20to%2005%20Nov%2017'!B4%3AB12&wdHideGridlines=True&wdInConfigurator=True'></iframe>"                       
-
+       print "<iframe width='200' height='303' frameborder='0' scrolling='no' src='https://goo.gl/zhFZdF'></iframe>"
 elif (day=="Wednesday" and meal=="Snacks"):
-    print "<iframe width='204' height='252' frameborder='0' scrolling='no' src='https://onedrive.live.com/embed?resid=640F5B6FB6A804C%21807&authkey=%21ABxP6VSeANl0lAc&em=2&wdAllowInteractivity=False&Item='30%20OCT%20to%2005%20Nov%2017'!B4%3AB12&wdHideGridlines=True&wdInConfigurator=True'></iframe>"                       
-
+       print "<iframe width='200' height='105' frameborder='0' scrolling='no' src='https://goo.gl/Wg5ukp'></iframe>"
 elif (day=="Wednesday" and meal=="Dinner"):
-    print "<iframe width='204' height='252' frameborder='0' scrolling='no' src='https://onedrive.live.com/embed?resid=640F5B6FB6A804C%21807&authkey=%21ABxP6VSeANl0lAc&em=2&wdAllowInteractivity=False&Item='30%20OCT%20to%2005%20Nov%2017'!B4%3AB12&wdHideGridlines=True&wdInConfigurator=True'></iframe>"                       
-
+       print "<iframe width='200' height='251' frameborder='0' scrolling='no' src='https://goo.gl/S8pbqi'></iframe>"
 elif (day=="Thursday" and meal=="Breakfast"):
-    print "<iframe width='204' height='252' frameborder='0' scrolling='no' src='https://onedrive.live.com/embed?resid=640F5B6FB6A804C%21807&authkey=%21ABxP6VSeANl0lAc&em=2&wdAllowInteractivity=False&Item='30%20OCT%20to%2005%20Nov%2017'!B4%3AB12&wdHideGridlines=True&wdInConfigurator=True'></iframe>"                       
+       print "<iframe width='200' height='230' frameborder='0' scrolling='no' src='https://goo.gl/TF65Em'></iframe>"
 elif (day=="Thursday" and meal=="Lunch"):
-    print "<iframe width='204' height='252' frameborder='0' scrolling='no' src='https://onedrive.live.com/embed?resid=640F5B6FB6A804C%21807&authkey=%21ABxP6VSeANl0lAc&em=2&wdAllowInteractivity=False&Item='30%20OCT%20to%2005%20Nov%2017'!B4%3AB12&wdHideGridlines=True&wdInConfigurator=True'></iframe>"                       
-
+       print "<iframe width='200' height='303' frameborder='0' scrolling='no' src='https://goo.gl/Hp7VEL'></iframe>"
 elif (day=="Thursday" and meal=="Snacks"):
-    print "<iframe width='204' height='252' frameborder='0' scrolling='no' src='https://onedrive.live.com/embed?resid=640F5B6FB6A804C%21807&authkey=%21ABxP6VSeANl0lAc&em=2&wdAllowInteractivity=False&Item='30%20OCT%20to%2005%20Nov%2017'!B4%3AB12&wdHideGridlines=True&wdInConfigurator=True'></iframe>"                       
-
+       print "<iframe width='200' height='105' frameborder='0' scrolling='no' src='https://goo.gl/d1tejn'></iframe>"
 elif (day=="Thursday" and meal=="Dinner"):
-    print "<iframe width='204' height='252' frameborder='0' scrolling='no' src='https://onedrive.live.com/embed?resid=640F5B6FB6A804C%21807&authkey=%21ABxP6VSeANl0lAc&em=2&wdAllowInteractivity=False&Item='30%20OCT%20to%2005%20Nov%2017'!B4%3AB12&wdHideGridlines=True&wdInConfigurator=True'></iframe>"                       
-
+       print "<iframe width='200' height='251' frameborder='0' scrolling='no' src='https://goo.gl/H2iGBe'></iframe>"
 elif (day=="Friday" and meal=="Breakfast"):
-    print "<iframe width='204' height='252' frameborder='0' scrolling='no' src='https://onedrive.live.com/embed?resid=640F5B6FB6A804C%21807&authkey=%21ABxP6VSeANl0lAc&em=2&wdAllowInteractivity=False&Item='30%20OCT%20to%2005%20Nov%2017'!B4%3AB12&wdHideGridlines=True&wdInConfigurator=True'></iframe>"                       
-
+      print "<iframe width='200' height='230' frameborder='0' scrolling='no' src='https://goo.gl/tYcTpf'></iframe>"
 elif (day=="Friday" and meal=="Lunch"):
-    print "<iframe width='204' height='252' frameborder='0' scrolling='no' src='https://onedrive.live.com/embed?resid=640F5B6FB6A804C%21807&authkey=%21ABxP6VSeANl0lAc&em=2&wdAllowInteractivity=False&Item='30%20OCT%20to%2005%20Nov%2017'!B4%3AB12&wdHideGridlines=True&wdInConfigurator=True'></iframe>"                       
-
+      print "<iframe width='200' height='230' frameborder='0' scrolling='no' src='https://goo.gl/8X5HQS'></iframe>"
 elif (day=="Friday" and meal=="Snacks"):
-    print "<iframe width='204' height='252' frameborder='0' scrolling='no' src='https://onedrive.live.com/embed?resid=640F5B6FB6A804C%21807&authkey=%21ABxP6VSeANl0lAc&em=2&wdAllowInteractivity=False&Item='30%20OCT%20to%2005%20Nov%2017'!B4%3AB12&wdHideGridlines=True&wdInConfigurator=True'></iframe>"                       
-
+      print "<iframe width='200' height='105' frameborder='0' scrolling='no' src='https://goo.gl/1ddKns'></iframe>"
 elif (day=="Friday" and meal=="Dinner"):
-    print "<iframe width='204' height='252' frameborder='0' scrolling='no' src='https://onedrive.live.com/embed?resid=640F5B6FB6A804C%21807&authkey=%21ABxP6VSeANl0lAc&em=2&wdAllowInteractivity=False&Item='30%20OCT%20to%2005%20Nov%2017'!B4%3AB12&wdHideGridlines=True&wdInConfigurator=True'></iframe>"                       
-
+      print "<iframe width='200' height='251' frameborder='0' scrolling='no' src='https://goo.gl/6qBCRC'></iframe>"
 elif (day=="Saturday" and meal=="Breakfast"):
-    print "<iframe width='204' height='252' frameborder='0' scrolling='no' src='https://onedrive.live.com/embed?resid=640F5B6FB6A804C%21807&authkey=%21ABxP6VSeANl0lAc&em=2&wdAllowInteractivity=False&Item='30%20OCT%20to%2005%20Nov%2017'!B4%3AB12&wdHideGridlines=True&wdInConfigurator=True'></iframe>"                       
-
+      print "<iframe width='200' height='230' frameborder='0' scrolling='no' src='https://goo.gl/7eVFCP'></iframe>"
 elif (day=="Saturday" and meal=="Lunch"):
-    print "<iframe width='204' height='252' frameborder='0' scrolling='no' src='https://onedrive.live.com/embed?resid=640F5B6FB6A804C%21807&authkey=%21ABxP6VSeANl0lAc&em=2&wdAllowInteractivity=False&Item='30%20OCT%20to%2005%20Nov%2017'!B4%3AB12&wdHideGridlines=True&wdInConfigurator=True'></iframe>"                       
-
+      print "<iframe width='200' height='303' frameborder='0' scrolling='no' src='https://goo.gl/RQguzS'></iframe>"
 elif (day=="Saturday" and meal=="Snacks"):
-    print "<iframe width='204' height='252' frameborder='0' scrolling='no' src='https://onedrive.live.com/embed?resid=640F5B6FB6A804C%21807&authkey=%21ABxP6VSeANl0lAc&em=2&wdAllowInteractivity=False&Item='30%20OCT%20to%2005%20Nov%2017'!B4%3AB12&wdHideGridlines=True&wdInConfigurator=True'></iframe>"                       
-
+      print "<iframe width='200' height='105' frameborder='0' scrolling='no' src='https://goo.gl/o1BrX3'></iframe>"
 elif (day=="Saturday" and meal=="Dinner"):
-    print "<iframe width='204' height='252' frameborder='0' scrolling='no' src='https://onedrive.live.com/embed?resid=640F5B6FB6A804C%21807&authkey=%21ABxP6VSeANl0lAc&em=2&wdAllowInteractivity=False&Item='30%20OCT%20to%2005%20Nov%2017'!B4%3AB12&wdHideGridlines=True&wdInConfigurator=True'></iframe>"                       
-
+      print "<iframe width='200' height='251' frameborder='0' scrolling='no' src='https://goo.gl/2s24AQ'></iframe>"
 elif (day=="Sunday" and meal=="Breakfast"):
-    print "<iframe width='204' height='252' frameborder='0' scrolling='no' src='https://onedrive.live.com/embed?resid=640F5B6FB6A804C%21807&authkey=%21ABxP6VSeANl0lAc&em=2&wdAllowInteractivity=False&Item='30%20OCT%20to%2005%20Nov%2017'!B4%3AB12&wdHideGridlines=True&wdInConfigurator=True'></iframe>"                       
-
+      print "<iframe width='200' height='230' frameborder='0' scrolling='no' src='https://goo.gl/H2nLir'></iframe>"
 elif (day=="Sunday" and meal=="Lunch"):
-    print "<iframe width='204' height='252' frameborder='0' scrolling='no' src='https://onedrive.live.com/embed?resid=640F5B6FB6A804C%21807&authkey=%21ABxP6VSeANl0lAc&em=2&wdAllowInteractivity=False&Item='30%20OCT%20to%2005%20Nov%2017'!B4%3AB12&wdHideGridlines=True&wdInConfigurator=True'></iframe>"                       
-
+      print "<iframe width='200' height='303' frameborder='0' scrolling='no' src='https://goo.gl/a5GhGi'></iframe>"
 elif (day=="Sunday" and meal=="Snacks"):
-    print "<iframe width='204' height='252' frameborder='0' scrolling='no' src='https://onedrive.live.com/embed?resid=640F5B6FB6A804C%21807&authkey=%21ABxP6VSeANl0lAc&em=2&wdAllowInteractivity=False&Item='30%20OCT%20to%2005%20Nov%2017'!B4%3AB12&wdHideGridlines=True&wdInConfigurator=True'></iframe>"                       
-
+      print "<iframe width='200' height='105' frameborder='0' scrolling='no' src='https://goo.gl/pwTSE1'></iframe>"
 elif (day=="Sunday" and meal=="Dinner"):
-    print "<iframe width='204' height='252' frameborder='0' scrolling='no' src='https://onedrive.live.com/embed?resid=640F5B6FB6A804C%21807&authkey=%21ABxP6VSeANl0lAc&em=2&wdAllowInteractivity=False&Item='30%20OCT%20to%2005%20Nov%2017'!B4%3AB12&wdHideGridlines=True&wdInConfigurator=True'></iframe>"                       
-
+      print "<iframe width='200' height='251' frameborder='0' scrolling='no' src='https://goo.gl/YHviww'></iframe>"
 
 
 cnn.close()
