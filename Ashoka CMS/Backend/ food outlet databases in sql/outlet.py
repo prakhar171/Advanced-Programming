@@ -34,31 +34,58 @@ if outlet=="THC":
 	cursor.execute(get_price)
 	get_price=cursor.fetchall()
 	cnn.commit()
-	print get_category, get_fooditem, get_price
+	
 	
 elif outlet =="foodjunc":
-	get_menu = "SELECT category FROM foodjunc"
-	cursor.execute(get_menu)
-	get_menu=cursor.fetchall()
+	get_category = "SELECT category FROM THC Where price < %s" % (price,)	
+	cursor.execute(get_category)
+	get_category=cursor.fetchall()
+	get_fooditem = "SELECT fooditem FROM THC Where price < %s" % (price,)
+	cursor.execute(get_fooditem)
+	get_fooditem=cursor.fetchall()
+	get_price = "SELECT price FROM THC Where price < %s" % (price,)
+	cursor.execute(get_price)
+	get_price=cursor.fetchall()
 	cnn.commit()
 
 elif outlet == "chicago":
-	get_menu = "SELECT category FROM chicago"
-	cursor.execute(get_menu)
-	get_menu=cursor.fetchall()
+	get_category = "SELECT category FROM THC Where price < %s" % (price,)	
+	cursor.execute(get_category)
+	get_category=cursor.fetchall()
+	get_fooditem = "SELECT fooditem FROM THC Where price < %s" % (price,)
+	cursor.execute(get_fooditem)
+	get_fooditem=cursor.fetchall()
+	get_price = "SELECT price FROM THC Where price < %s" % (price,)
+	cursor.execute(get_price)
+	get_price=cursor.fetchall()
 	cnn.commit()
 
 elif outlet == "chitchat":
-	get_menu = "SELECT category FROM chitchat"
-	cursor.execute(get_menu)
-	get_menu=cursor.fetchall()
+	get_category = "SELECT Category FROM THC Where price < %s" % (price,)	
+	cursor.execute(get_category)
+	get_category=cursor.fetchall()
+	get_fooditem = "SELECT Fooditem FROM THC Where price < %s" % (price,)
+	cursor.execute(get_fooditem)
+	get_fooditem=cursor.fetchall()
+	get_price = "SELECT price FROM THC Where price < %s" % (price,)
+	cursor.execute(get_price)
+	get_price=cursor.fetchall()
 	cnn.commit()
 
 elif outlet == "juicebar":	
-	get_menu = "SELECT category FROM juicebar"
-	cursor.execute(get_menu)
-	get_menu=cursor.fetchall()
+	get_category = "SELECT category FROM THC Where price < %s" % (price,)	
+	cursor.execute(get_category)
+	get_category=cursor.fetchall()
+	get_fooditem = "SELECT fooditem FROM THC Where price < %s" % (price,)
+	cursor.execute(get_fooditem)
+	get_fooditem=cursor.fetchall()
+	get_price = "SELECT price FROM THC Where price < %s" % (price,)
+	cursor.execute(get_price)
+	get_price=cursor.fetchall()
 	cnn.commit()
+
+for i in range(len(get_category)):
+	print get_category[i],get_fooditem[i], get_price[i]
 
 cnn.close()
 
