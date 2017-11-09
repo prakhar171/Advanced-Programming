@@ -22,7 +22,6 @@ print "<head>"
 print "<title>Shuttle Bookings</title>"
 print "</head>"
 print "<body>"
-print price, outlet
 if outlet=="THC":
 	get_category = "SELECT category FROM THC Where price < %s" % (price,)	
 	cursor.execute(get_category)
@@ -83,10 +82,22 @@ elif outlet == "juicebar":
 	cursor.execute(get_price)
 	get_price=cursor.fetchall()
 	cnn.commit()
-
-for i in range(len(get_category)):
-	print get_category[i],get_fooditem[i], get_price[i]
-
+food_category=[]
+food_fooditem=[]
+food_price=[]
+for i in range (len(get_category)):
+	food_category.append(get_category[i])
+	food_fooditem.append(get_fooditem[i])
+	food_price.append(get_price[i])
+print "category"
+print "fooditem"
+print "price"
+print '<br>'
+for j in range(len(food_category)):
+	print food_category[j][0]
+	print food_fooditem[j][0]
+	print food_price[j][0]
+	print '<br>'
 cnn.close()
 
 
