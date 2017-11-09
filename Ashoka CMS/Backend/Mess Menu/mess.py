@@ -2,7 +2,7 @@
 print "Content-type:text/html\r\n\r\n"
 import mysql.connector
 from mysql.connector import errorcode
-# Import modules for CGI handling 
+# Import modules for CGI handling #The module is being used to fetch data from HTML form
 import cgi, cgitb
 
 # Create instance of FieldStorage 
@@ -12,13 +12,13 @@ cnn=mysql.connector.connect(user = "root", password = "", host = "localhost", da
 cursor=cnn.cursor()
 day  = form.getvalue('Day')
 meal = form.getvalue('Meal')
-
+# To create a simple webpage to display our result
 print "<html>"
 print "<head>"
 print "<title>Room Bookings</title>"
 print "</head>"
 
-
+# Comparing data received from the user in the variable 'day' and 'meal' and comparing the variables to find if they correspoding to anything to our Mess Menu in the cloud
 if day=="Monday" and meal=="Breakfast":
     print "<iframe width='204' height='230' frameborder='0' scrolling='no' src='https://goo.gl/K5kWFz'></iframe>"
 
