@@ -15,7 +15,10 @@ meal = form.getvalue('Meal')
 # To create a simple webpage to display our result
 print "<html>"
 print "<head>"
-print "<title>Room Bookings</title>"
+print "<title>Mess Menu</title>"
+print "<p>Insert an image from a web site:</p>
+print "<img src='https://www.w3schools.com/images/lamp.jpg' alt='Lamp' width='32' height='32'>"
+
 print "</head>"
 
 # Comparing data received from the user in the variable 'day' and 'meal' and comparing the variables to find if they correspoding to anything to our Mess Menu in the cloud
