@@ -16,7 +16,7 @@ meal = form.getvalue('Meal')
 print "<html>"
 print "<head>"
 print "<title>Mess Menu</title>"
-print "<p>Insert an image from a web site:</p>
+print "<p>Insert an image from a web site:</p>"
 print "<img src='https://www.w3schools.com/images/lamp.jpg' alt='Lamp' width='32' height='32'>"
 
 print "</head>"
