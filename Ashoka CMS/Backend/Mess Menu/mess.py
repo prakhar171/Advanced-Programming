@@ -5,7 +5,6 @@ from mysql.connector import errorcode
 # Import modules for CGI handling #The module is being used to fetch data from HTML form
 import cgi, cgitb
 import xlrd
-import os.path
 
 
 
