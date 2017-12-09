@@ -23,7 +23,6 @@ print "<head>"
 print "<title>Mess Menu</title>"
 
 print "</head>"
-print "https://australianbananas.com.au/Images/Home/RipenessBlend.png"
 # Comparing data received from the user in the variable 'day' and 'meal' and comparing the variables to find if they correspoding to anything to our Mess Menu in the cloud
 if day=="Monday" and meal=="Breakfast":
     print "<iframe width='204' height='230' frameborder='0' scrolling='no' src='https://goo.gl/K5kWFz'></iframe>"
