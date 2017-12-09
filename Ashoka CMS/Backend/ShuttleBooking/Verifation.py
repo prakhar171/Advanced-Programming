@@ -40,13 +40,13 @@ if ashoka_id[-13:] == "ashoka.edu.in":
 	cursor.execute(multiple_bookings)
 	multiple_bookings = cursor.fetchall()
 	cnn.commit()
-	x=""
+	x=0
 	for i in multiple_bookings:
 		for j in i:
 			if j == ashoka_id:
-				x = "multiple_bookings"
+				x += 1
 				break
-		if x=="multiple_bookings":
+		if x==2:
 			print "<html>" 
 			print "<head>" 
 			print "<meta http-equiv='refresh' content='0;url=/verify.html' /> "
