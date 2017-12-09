@@ -33,7 +33,7 @@
     </nav>
     <div class="row register-form">
         <div class="col-md-8 col-md-offset-2">
-            <form action = "/Verify_OTP.py" method = "POST" class="form-horizontal custom-form">
+            <form action = "/OTP.py" method = "POST" class="form-horizontal custom-form">
                 <h1 class="text-uppercase" id="room_head">Shuttle Booking</h1>
                 <div class="form-group">
                     <div class="col-sm-4 label-column">
@@ -48,10 +48,10 @@
                         <label class="control-label" for="email-input-field">Verification Code</label>
                     </div>
                     <div class="col-sm-6 input-column">
-                        <input class="form-control" type="number" name="OTP" required="" min="00000000" max="99999999">
+                        <input class="form-control" type="number" name="OTP" required="" >
                     </div>
                 </div>
-                <a href = "/Applications/XAMPP/xamppfiles/htdocs/Verify_OTP.py"> <button class="btn btn-primary btn-block" type="submit">Verify Email</a></button>
+                <a href = "/Applications/XAMPP/xamppfiles/htdocs/OTP.py"> <button class="btn btn-primary btn-block" type="submit">Verify Email</a>
             </form>
         </div>
     </div>

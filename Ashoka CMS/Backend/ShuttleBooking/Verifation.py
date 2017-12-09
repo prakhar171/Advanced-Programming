@@ -66,7 +66,7 @@ if ashoka_id[-13:] == "ashoka.edu.in":
 		mail()
 		print "<html>" 
 		print "<head>" 
-		print "<meta http-equiv='refresh' content='0;url=/verified.html' /> "
+		print "<meta http-equiv='refresh' content='0;url=/shuttle.html' /> "
 		print "<title>You are going to be redirected</title>"
 		print "</head> "
 		print "<body> "
