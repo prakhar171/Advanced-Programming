@@ -6,7 +6,6 @@ from mysql.connector import errorcode
 import cgi, cgitb
 import xlrd
 import os.path
-workbook = xlrd.open_workbook('my_file_name.xls')
 
 
 
