@@ -1,0 +1,3 @@
+To run the website, create a localhost file using XAMPP and put all the data in the htdocs folder.
+Add the code in the path of the XAMPP servers so they can run python files. 
+Give permission to every python file so it can be run. (chmod 755)
