@@ -1,1 +1,0 @@
-xamppfiles/manager-osx.app

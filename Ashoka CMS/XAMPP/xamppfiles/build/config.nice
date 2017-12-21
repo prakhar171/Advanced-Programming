@@ -1,0 +1,73 @@
+#! /bin/sh
+#
+# Created by configure
+
+CC="gcc"; export CC
+CFLAGS="-I/Applications/XAMPP/xamppfiles/include/c-client -I/Applications/XAMPP/xamppfiles/include/libpng -I/Applications/XAMPP/xamppfiles/include/freetype2 -O3  -L/Applications/XAMPP/xamppfiles/lib -I/Applications/XAMPP/xamppfiles/include -I/Applications/XAMPP/xamppfiles/include/ncurses -arch x86_64"; export CFLAGS
+CPPFLAGS="-I/Applications/XAMPP/xamppfiles/include/c-client -I/Applications/XAMPP/xamppfiles/include/libpng -I/Applications/XAMPP/xamppfiles/include/freetype2 -O3 -L/Applications/XAMPP/xamppfiles/lib -I/Applications/XAMPP/xamppfiles/include -I/Applications/XAMPP/xamppfiles/include/ncurses -arch x86_64"; export CPPFLAGS
+LDFLAGS="-Wl,-rpath -Wl,/Applications/XAMPP/xamppfiles/lib -L/Applications/XAMPP/xamppfiles/lib -I/Applications/XAMPP/xamppfiles/include -arch x86_64 -L/Applications/XAMPP/xamppfiles/lib -L/Applications/XAMPP/xamppfiles"; export LDFLAGS
+"./configure" \
+"--prefix=/Applications/XAMPP/xamppfiles" \
+"--enable-nonportable-atomics" \
+"--sysconfdir=/Applications/XAMPP/xamppfiles/etc" \
+"--enable-auth-anon" \
+"--enable-auth-dbm" \
+"--enable-auth-digest" \
+"--enable-file-cache" \
+"--enable-echo" \
+"--enable-charset-lite" \
+"--enable-cache" \
+"--enable-disk-cache" \
+"--enable-mem-cache" \
+"--enable-ext-filter" \
+"--enable-case-filter" \
+"--enable-case-filter-in" \
+"--enable-deflate" \
+"--enable-mime-magic" \
+"--enable-cern-meta" \
+"--enable-expires" \
+"--enable-headers" \
+"--enable-usertrack" \
+"--enable-unique-id" \
+"--enable-proxy" \
+"--enable-proxy-connect" \
+"--enable-proxy-ftp" \
+"--enable-proxy-http" \
+"--enable-bucketeer" \
+"--enable-http" \
+"--enable-info" \
+"--enable-suexec" \
+"--enable-cgid" \
+"--enable-vhost-alias" \
+"--enable-speling" \
+"--enable-rewrite" \
+"--enable-so" \
+"--with-z=/Applications/XAMPP/xamppfiles" \
+"--with-expat=/Applications/XAMPP/xamppfiles" \
+"--enable-dav" \
+"--enable-dav-fs" \
+"--enable-mods-shared=most" \
+"--with-mpm=prefork" \
+"--with-suexec-caller=nobody" \
+"--with-suexec-docroot=/Applications/XAMPP/xamppfiles/htdocs" \
+"--without-berkeley-db" \
+"--enable-ldap" \
+"--with-ldap" \
+"--enable-auth-ldap" \
+"--enable-authnz-ldap" \
+"--enable-ipv6" \
+"--enable-dbd" \
+"--enable-https" \
+"--with-nghttp2=/Applications/XAMPP/xamppfiles" \
+"--with-mysql=/Applications/XAMPP/xamppfiles" \
+"--with-apr=/Applications/XAMPP/xamppfiles/bin/apr-1-config" \
+"--with-apr-util=/Applications/XAMPP/xamppfiles/bin/apu-1-config" \
+"--with-pcre=/Applications/XAMPP/xamppfiles" \
+"--enable-modules=all" \
+"--enable-ssl" \
+"--with-ssl=/Applications/XAMPP/xamppfiles" \
+"CC=gcc" \
+"CFLAGS=-I/Applications/XAMPP/xamppfiles/include/c-client -I/Applications/XAMPP/xamppfiles/include/libpng -I/Applications/XAMPP/xamppfiles/include/freetype2 -O3 -L/Applications/XAMPP/xamppfiles/lib -I/Applications/XAMPP/xamppfiles/include -I/Applications/XAMPP/xamppfiles/include/ncurses -arch x86_64" \
+"LDFLAGS=-Wl,-rpath -Wl,/Applications/XAMPP/xamppfiles/lib -L/Applications/XAMPP/xamppfiles/lib -I/Applications/XAMPP/xamppfiles/include -arch x86_64 -L/Applications/XAMPP/xamppfiles/lib -L/Applications/XAMPP/xamppfiles" \
+"CPPFLAGS=-I/Applications/XAMPP/xamppfiles/include/c-client -I/Applications/XAMPP/xamppfiles/include/libpng -I/Applications/XAMPP/xamppfiles/include/freetype2 -O3 -L/Applications/XAMPP/xamppfiles/lib -I/Applications/XAMPP/xamppfiles/include -I/Applications/XAMPP/xamppfiles/include/ncurses -arch x86_64" \
+"$@"
